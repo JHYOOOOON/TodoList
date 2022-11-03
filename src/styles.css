@@ -1,0 +1,87 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #32a852;
+  padding: 25px 30px;
+  height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+form > input {
+  width: 80%;
+  height: 35px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 80%;
+  overflow: auto;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: #ffffff30;
+  padding: 5px 10px;
+  border-left: 5px solid #fff;
+  font-size: 18px;
+}
+
+li > div {
+  display: flex;
+  gap: 10px;
+}
+
+li input {
+  cursor: pointer;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+li.isDone p {
+  text-decoration: line-through;
+  color: #777;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  height: 100%;
+  transition: color 0.1s;
+}
+
+button:hover {
+  color: #fff;
+}
