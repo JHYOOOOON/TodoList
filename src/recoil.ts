@@ -25,7 +25,7 @@ const todoListAtom = atomFamily<Todo, Id>({
 export const todoListSelector = selectorFamily<Todo, Id>({
   key: "selectorFamily/todoList",
   get: (id) => ({ get }) => get(todoListAtom(id)),
-  set: (id) => ({ get, set, reset }, todo) => {
+  set: (id) => ({ set, reset }, todo) => {
     if (todo instanceof DefaultValue) {
       reset(todoListAtom(id));
       set(todoIdListAtom, (prev) => prev.filter((todoId) => todoId !== id));

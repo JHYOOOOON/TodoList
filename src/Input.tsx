@@ -21,6 +21,7 @@ const Input = () => {
   const handleSubmit = useCallback(
     (event: FormEvent) => {
       event.preventDefault();
+      if (value.trim().length === 0) return;
       addTodo(value);
       setValue("");
     },
